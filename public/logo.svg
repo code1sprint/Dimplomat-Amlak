@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Rich 24K Gold Gradients for 3D Metallic Effect -->
+    <linearGradient id="gold-bright" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C0" />
+      <stop offset="25%" stop-color="#FCD34D" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="75%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <linearGradient id="gold-vertical" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8D6" />
+      <stop offset="20%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="80%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <linearGradient id="gold-slant-left" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#92400E" />
+      <stop offset="40%" stop-color="#D97706" />
+      <stop offset="70%" stop-color="#FDE68A" />
+      <stop offset="100%" stop-color="#FFFDF0" />
+    </linearGradient>
+
+    <linearGradient id="gold-slant-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF0" />
+      <stop offset="30%" stop-color="#FDE68A" />
+      <stop offset="65%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Bevel Facet Gradients for the 3D 'D' -->
+    <linearGradient id="gold-d-face" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9DE" />
+      <stop offset="30%" stop-color="#FCD34D" />
+      <stop offset="60%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <linearGradient id="gold-d-bevel-inner" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#78350F" />
+      <stop offset="50%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#FDE68A" />
+    </linearGradient>
+
+    <linearGradient id="gold-d-shadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#B45309" />
+      <stop offset="100%" stop-color="#451A03" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="logo-drop-shadow" x="-15%" y="-10%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.38" />
+    </filter>
+
+    <filter id="d-3d-shadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="3" dy="6" stdDeviation="4" flood-color="#451a03" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Group with Drop Shadow -->
+  <g filter="url(#logo-drop-shadow)">
+
+    <!-- ==============================================
+         1. BASE PEDESTALS (GROUND BARS)
+         ============================================== -->
+    <!-- Lower Bar -->
+    <rect x="142" y="375" width="216" height="11" rx="2" fill="url(#gold-bright)" stroke="#78350F" stroke-width="0.75" />
+    <!-- Upper Bar -->
+    <rect x="135" y="356" width="230" height="11" rx="2" fill="url(#gold-bright)" stroke="#78350F" stroke-width="0.75" />
+
+    <!-- ==============================================
+         2. TIER 3: OUTER WINGS (LOWEST STEP)
+         ============================================== -->
+    <!-- Left Wing Outer Bar -->
+    <path d="M 152 284 L 160 280 L 160 356 L 152 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Left Wing Inner Bar -->
+    <path d="M 168 276 L 176 272 L 176 356 L 168 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Left Wing Angled Roofline -->
+    <path d="M 148 290 L 186 268 L 191 276 L 152 298 Z" fill="url(#gold-slant-left)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- Right Wing Inner Bar -->
+    <path d="M 324 272 L 332 276 L 332 356 L 324 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Right Wing Outer Bar -->
+    <path d="M 340 280 L 348 284 L 348 356 L 340 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Right Wing Angled Roofline -->
+    <path d="M 314 268 L 352 290 L 348 298 L 309 276 Z" fill="url(#gold-slant-right)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- ==============================================
+         3. TIER 2: MID-HEIGHT SHOULDERS
+         ============================================== -->
+    <!-- Mid Left Bar 1 -->
+    <path d="M 184 212 L 192 208 L 192 356 L 184 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Mid Left Bar 2 -->
+    <path d="M 200 204 L 208 200 L 208 356 L 200 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Mid Left Angled Roofline -->
+    <path d="M 180 216 L 224 168 L 230 174 L 186 222 Z" fill="url(#gold-slant-left)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- Mid Right Bar 1 -->
+    <path d="M 292 200 L 300 204 L 300 356 L 292 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Mid Right Bar 2 -->
+    <path d="M 308 208 L 316 212 L 316 356 L 308 356 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Mid Right Angled Roofline -->
+    <path d="M 276 168 L 320 216 L 314 222 L 270 174 Z" fill="url(#gold-slant-right)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- ==============================================
+         4. TIER 1: UPPER ARCHITECTURAL FRAME & CENTRAL SPHERES
+         ============================================== -->
+    <!-- Center Left Pillar (Flanking Central Arch) -->
+    <path d="M 216 165 L 224 160 L 224 252 L 216 252 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Center Right Pillar (Flanking Central Arch) -->
+    <path d="M 276 160 L 284 165 L 284 252 L 276 252 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+
+    <!-- Center Inner Left Spire Bar -->
+    <path d="M 233 138 L 240 133 L 240 248 L 233 248 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+    <!-- Center Inner Right Spire Bar -->
+    <path d="M 260 133 L 267 138 L 267 248 L 260 248 Z" fill="url(#gold-vertical)" stroke="#92400E" stroke-width="0.5" />
+
+    <!-- Top Spire Chevron Peak Outer -->
+    <path d="M 246 62 L 254 62 L 254 94 L 246 94 Z" fill="url(#gold-bright)" stroke="#78350F" stroke-width="0.5" />
+    <!-- Central Needle Tip -->
+    <path d="M 247 48 L 253 48 L 253 62 L 247 62 Z" fill="url(#gold-bright)" />
+    
+    <!-- Top Apex Chevron Roof 1 -->
+    <path d="M 250 82 L 228 116 L 235 120 L 250 96 L 265 120 L 272 116 Z" fill="url(#gold-bright)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- Top Apex Chevron Roof 2 -->
+    <path d="M 250 114 L 216 162 L 222 166 L 250 126 L 278 166 L 284 162 Z" fill="url(#gold-bright)" stroke="#78350F" stroke-width="0.5" />
+
+    <!-- Horizontal Arch Cap over the D -->
+    <rect x="212" y="248" width="76" height="8" rx="1.5" fill="url(#gold-bright)" stroke="#92400E" stroke-width="0.5" />
+
+    <!-- ==============================================
+         5. EMBOSSED 3D METALLIC GOLD "D" EMBLEM
+         ============================================== -->
+    <!-- 3D Extrusion Shadow Layer for 'D' -->
+    <g filter="url(#d-3d-shadow)">
+      <path d="
+        M 221 267
+        L 256 267
+        C 285 267 296 284 296 309
+        C 296 335 285 352 256 352
+        L 221 352
+        Z
+        M 235 282
+        L 235 337
+        L 254 337
+        C 273 337 281 326 281 309
+        C 281 293 273 282 254 282
+        Z" 
+        fill="url(#gold-d-shadow)" />
+    </g>
+
+    <!-- Main Beveled Gold Body of 'D' -->
+    <path d="
+      M 218 264
+      L 254 264
+      C 283 264 294 281 294 307
+      C 294 333 283 350 254 350
+      L 218 350
+      Z
+      M 232 279
+      L 232 335
+      L 252 335
+      C 271 335 279 324 279 307
+      C 279 291 271 279 252 279
+      Z" 
+      fill="url(#gold-d-face)" 
+      stroke="#FFE57F" 
+      stroke-width="1" />
+
+    <!-- Inner Bevel Highlight Line on 'D' Spine -->
+    <line x1="223" y1="268" x2="223" y2="346" stroke="#FFFDF0" stroke-width="1.75" stroke-linecap="round" opacity="0.9" />
+
+    <!-- Inner Curve Highlight on 'D' -->
+    <path d="
+      M 252 271
+      C 276 271 287 286 287 307
+      C 287 328 276 343 252 343" 
+      fill="none" 
+      stroke="#FFFDE6" 
+      stroke-width="1.5" 
+      stroke-linecap="round" 
+      opacity="0.85" />
+
+    <!-- Bevel Contrast Shade on Inner Hole Edge of 'D' -->
+    <path d="
+      M 236 283
+      L 236 331
+      M 236 331
+      L 250 331
+      C 266 331 273 322 273 307" 
+      fill="none" 
+      stroke="#78350F" 
+      stroke-width="1.25" 
+      opacity="0.75" />
+
+  </g>
+</svg>

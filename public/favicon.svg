@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="fav-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5C0" />
+      <stop offset="30%" stop-color="#FCD34D" />
+      <stop offset="60%" stop-color="#F59E0B" />
+      <stop offset="85%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+  </defs>
+  <g>
+    <!-- Base -->
+    <rect x="142" y="375" width="216" height="12" rx="2" fill="url(#fav-gold)" />
+    <rect x="135" y="356" width="230" height="12" rx="2" fill="url(#fav-gold)" />
+    <!-- Wings & Columns -->
+    <path d="M 152 284 L 160 280 L 160 356 L 152 356 Z" fill="url(#fav-gold)" />
+    <path d="M 168 276 L 176 272 L 176 356 L 168 356 Z" fill="url(#fav-gold)" />
+    <path d="M 148 290 L 186 268 L 191 276 L 152 298 Z" fill="url(#fav-gold)" />
+    <path d="M 324 272 L 332 276 L 332 356 L 324 356 Z" fill="url(#fav-gold)" />
+    <path d="M 340 280 L 348 284 L 348 356 L 340 356 Z" fill="url(#fav-gold)" />
+    <path d="M 314 268 L 352 290 L 348 298 L 309 276 Z" fill="url(#fav-gold)" />
+    <path d="M 184 212 L 192 208 L 192 356 L 184 356 Z" fill="url(#fav-gold)" />
+    <path d="M 200 204 L 208 200 L 208 356 L 200 356 Z" fill="url(#fav-gold)" />
+    <path d="M 180 216 L 224 168 L 230 174 L 186 222 Z" fill="url(#fav-gold)" />
+    <path d="M 292 200 L 300 204 L 300 356 L 292 356 Z" fill="url(#fav-gold)" />
+    <path d="M 308 208 L 316 212 L 316 356 L 308 356 Z" fill="url(#fav-gold)" />
+    <path d="M 276 168 L 320 216 L 314 222 L 270 174 Z" fill="url(#fav-gold)" />
+    <!-- Center & Spire -->
+    <path d="M 216 165 L 224 160 L 224 252 L 216 252 Z" fill="url(#fav-gold)" />
+    <path d="M 276 160 L 284 165 L 284 252 L 276 252 Z" fill="url(#fav-gold)" />
+    <path d="M 233 138 L 240 133 L 240 248 L 233 248 Z" fill="url(#fav-gold)" />
+    <path d="M 260 133 L 267 138 L 267 248 L 260 248 Z" fill="url(#fav-gold)" />
+    <path d="M 246 62 L 254 62 L 254 94 L 246 94 Z" fill="url(#fav-gold)" />
+    <path d="M 247 48 L 253 48 L 253 62 L 247 62 Z" fill="url(#fav-gold)" />
+    <path d="M 250 82 L 228 116 L 235 120 L 250 96 L 265 120 L 272 116 Z" fill="url(#fav-gold)" />
+    <path d="M 250 114 L 216 162 L 222 166 L 250 126 L 278 166 L 284 162 Z" fill="url(#fav-gold)" />
+    <rect x="212" y="248" width="76" height="8" rx="1.5" fill="url(#fav-gold)" />
+    <!-- Letter D -->
+    <path d="M 218 264 L 254 264 C 283 264 294 281 294 307 C 294 333 283 350 254 350 L 218 350 Z M 232 279 L 232 335 L 252 335 C 271 335 279 324 279 307 C 279 291 271 279 252 279 Z" fill="url(#fav-gold)" />
+  </g>
+</svg>
