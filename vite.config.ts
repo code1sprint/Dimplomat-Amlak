@@ -3,9 +3,34 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+/** Map /public/* → /* so GitHub Pages paths also work in Vite (public/ is flattened at /). */
+function publicPrefixPlugin() {
   return {
-    plugins: [react(), tailwindcss()],
+    name: 'public-prefix',
+    configureServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        if (req.url?.startsWith('/public/')) {
+          req.url = req.url.slice('/public'.length) || '/';
+        }
+        next();
+      });
+    },
+    configurePreviewServer(server) {
+      server.middlewares.use((req, _res, next) => {
+        if (req.url?.startsWith('/public/')) {
+          req.url = req.url.slice('/public'.length) || '/';
+        }
+        next();
+      });
+    },
+  };
+}
+
+export default defineConfig(({ command }) => {
+  return {
+    // GitHub project pages: https://code1sprint.github.io/Dimplomat-Amlak/
+    base: command === 'build' ? '/Dimplomat-Amlak/' : '/',
+    plugins: [publicPrefixPlugin(), react(), tailwindcss()],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
